@@ -30,7 +30,7 @@ namespace Books.Api.Controllers
         }
         
         [HttpDelete("{bookId}/relationships/reviews/{reviewId}")]
-        public async Task<IActionResult> PostRelationshipAsync(int bookId, int reviewId)
+        public async Task<IActionResult> DeleteRelationshipAsync(int bookId, int reviewId)
         {
             var result = await _reviewService.DeleteAsync(reviewId);
 

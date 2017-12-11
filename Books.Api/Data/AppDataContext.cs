@@ -8,11 +8,8 @@ namespace Books.Api.Data
 {
     public class AppDataContext : DbContext
     {
-        private IDbContextTransaction _currentTransaction;
-
         public AppDataContext(DbContextOptions<AppDataContext> options) : base(options)
         {
-            
         }
 
         public DbSet<Book> Books { get; set; }
